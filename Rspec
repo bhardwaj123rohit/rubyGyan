@@ -1,0 +1,27 @@
+Introduction to Rspec
+
+Behaviour Driven Development is an Agile development process that comprises aspects of Acceptance Test Driven Planning, Domain Driven Design and Test Driven Development. RSpec is a BDD tool aimed at TDD in the context of BDD.
+
+You could say that RSpec is what is traditionally known as a unit testing framework, but we prefer to describe it as “a Domain Specific Language for describing the expected behaviour of a system with executable examples.”
+
+
+describe User do
+end
+
+The describe method creates an instance of Behaviour. So “describe User” is really saying “describe the behaviour of the User class”.
+
+> spec user_spec.rb
+
+ it "should be in any roles assigned to it" do
+  end
+
+
+The it method returns an instance of Example. This is a metaphor for an example of the behaviour that we are describing.
+
+
+
+
+$ spec user_spec.rb --format specdoc
+
+The specdoc format outputs the name of each Behaviour (the object created by the describe method) and each Example (the object created by the it method). 
+

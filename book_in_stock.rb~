@@ -1,0 +1,14 @@
+class BookInStock
+
+	def initialize (isbn,price)
+attr_reader	@isbn=isbn
+	@price=Float(price)
+
+	end
+
+end
+
+b1=BookInStock.new(123,23.3)
+
+puts b1.@isbn
+

@@ -1,0 +1,18 @@
+class Test
+	
+ attr_accessor 	:test, :main
+
+	def initialise(p,s)
+	
+		@test=p
+
+		@main=s
+		
+	end
+
+	def to_s
+		prints "hello"
+	end
+end
+
+Test.new(3,2).to_s
